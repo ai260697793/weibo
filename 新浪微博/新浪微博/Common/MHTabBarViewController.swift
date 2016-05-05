@@ -47,7 +47,6 @@ class MHTabBarViewController: UITabBarController {
     
     //
     func addChildViewController() {
-        UITabBar.appearance().tintColor = UIColor.orangeColor()
         
         addChildViewController(MHHomeViewController(),title: "首页" ,image: "tabbar_home")
         addChildViewController(MHMessageViewController(),title: "消息" ,image: "tabbar_message_center")

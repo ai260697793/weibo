@@ -16,11 +16,11 @@ class MHHomeViewController: MHBaseTableViewController {
 
         visitorView?.setupInfo("关注一些人，回这里看看有什么惊喜", image: nil)
 
-        let closure = {
-            print("回调成功")
-        }
+//        let closure = {
+//            print("回调成功")
+//        }
         
-        visitorView?.registerClosure = closure
+//        visitorView?.registerClosure = closure
     }
 
 }

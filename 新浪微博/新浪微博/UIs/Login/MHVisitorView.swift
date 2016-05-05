@@ -9,10 +9,18 @@
 import UIKit
 import SnapKit
 
+// 定义协议
+protocol MHVisitorViewDelegate: NSObjectProtocol {
+    func didRegister()
+    func didLogin()
+}
+
 class MHVisitorView: UIView {
     
     // 定义一个闭包属性
-    var registerClosure: (()->())?
+//    var registerClosure: (()->())?
+    // 定义代理属性
+    weak var delegate: MHVisitorViewDelegate?
     
 
     // MARK: - 重写父类的构造方法
@@ -99,12 +107,13 @@ class MHVisitorView: UIView {
     // MARK: - 按钮点击事件
     @objc private func registerButtonClick(){
         // 调用
-        registerClosure?()
+//        registerClosure?()
+        delegate?.didRegister()
     
     }
     
     @objc private func loginButtonClick(){
-        
+        delegate?.didLogin()
         
     }
 
@@ -135,7 +144,7 @@ class MHVisitorView: UIView {
     private lazy var noticeLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .Center
-        label.font = UIFont.systemFontOfSize(15)
+        label.font = UIFont.systemFontOfSize(14)
         label.textColor = UIColor.darkGrayColor()
         label.text = "关注一些人，回这里看看有什么惊喜"
         label.numberOfLines = 0

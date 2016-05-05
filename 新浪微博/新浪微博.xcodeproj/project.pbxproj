@@ -13,6 +13,7 @@
 		40034BC21CDB2672002661F1 /* MHMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40034BC11CDB2672002661F1 /* MHMessageViewController.swift */; };
 		40034BC41CDB267B002661F1 /* MHSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40034BC31CDB267B002661F1 /* MHSettingViewController.swift */; };
 		40034BC61CDB26A6002661F1 /* MHVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40034BC51CDB26A6002661F1 /* MHVisitorView.swift */; };
+		40822B421CDB84940032270F /* MHHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40822B411CDB84940032270F /* MHHTTPClient.swift */; };
 		40FA06B61CDA08E00036DAC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FA06B51CDA08E00036DAC0 /* AppDelegate.swift */; };
 		40FA06BD1CDA08E00036DAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40FA06BC1CDA08E00036DAC0 /* Assets.xcassets */; };
 		40FA06E61CDA307E0036DAC0 /* MHBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FA06E51CDA307E0036DAC0 /* MHBaseTableViewController.swift */; };
@@ -28,6 +29,7 @@
 		40034BC11CDB2672002661F1 /* MHMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHMessageViewController.swift; sourceTree = "<group>"; };
 		40034BC31CDB267B002661F1 /* MHSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHSettingViewController.swift; sourceTree = "<group>"; };
 		40034BC51CDB26A6002661F1 /* MHVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHVisitorView.swift; sourceTree = "<group>"; };
+		40822B411CDB84940032270F /* MHHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHHTTPClient.swift; sourceTree = "<group>"; };
 		40FA06B21CDA08E00036DAC0 /* 新浪微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "新浪微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40FA06B51CDA08E00036DAC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40FA06BC1CDA08E00036DAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				40FA06E51CDA307E0036DAC0 /* MHBaseTableViewController.swift */,
 				40FA06E71CDA30B10036DAC0 /* MHTabBarViewController.swift */,
 				40034BBB1CDAE1FC002661F1 /* MHTabBar.swift */,
+				40822B411CDB84940032270F /* MHHTTPClient.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				40034BBC1CDAE1FC002661F1 /* MHTabBar.swift in Sources */,
 				40034BC61CDB26A6002661F1 /* MHVisitorView.swift in Sources */,
 				40034BC01CDB2662002661F1 /* MHFindViewController.swift in Sources */,
+				40822B421CDB84940032270F /* MHHTTPClient.swift in Sources */,
 				40FA06E61CDA307E0036DAC0 /* MHBaseTableViewController.swift in Sources */,
 				40034BC21CDB2672002661F1 /* MHMessageViewController.swift in Sources */,
 			);

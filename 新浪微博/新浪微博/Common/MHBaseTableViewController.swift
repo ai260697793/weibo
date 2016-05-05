@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MHBaseTableViewController: UITableViewController {
+class MHBaseTableViewController: UITableViewController ,MHVisitorViewDelegate {
     
     var isLogin: Bool = false
     
@@ -21,19 +21,29 @@ class MHBaseTableViewController: UITableViewController {
             super.loadView()
         }else {
             
+            setupNav()
+            
             visitorView = MHVisitorView()
+            visitorView?.delegate = self
             view = visitorView
         }        
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    private func setupNav(){
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(MHBaseTableViewController.didRegister))
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(MHBaseTableViewController.didLogin))
+        
     }
+}
 
+extension MHBaseTableViewController {
+    
+    func didRegister() {
+        
+    }
+    
+    func didLogin() {
+        
+    }
 }

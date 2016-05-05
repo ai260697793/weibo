@@ -21,7 +21,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.rootViewController = MHTabBarViewController()
         
+        setAppearance()
+        
         return true
+    }
+    
+    ///  程序一启动时,设置所有bar的颜色
+    private func setAppearance(){
+        UITabBar.appearance().tintColor = UIColor.orangeColor()
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
     }
 
     func applicationWillResignActive(application: UIApplication) {
