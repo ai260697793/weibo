@@ -21,6 +21,12 @@ class MHHomeViewController: MHBaseTableViewController {
 //        }
         
 //        visitorView?.registerClosure = closure
+        
+        MHHTTPClient.sharedInstance.request(MHHTTPClientType.POST, URLString: "", parameters: nil, success: { (_, JSON) in
+            
+            }) { (_, JSON) in
+                
+        }
     }
 
 }
