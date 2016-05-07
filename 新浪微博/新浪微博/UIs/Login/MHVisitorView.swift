@@ -10,7 +10,8 @@ import UIKit
 import SnapKit
 
 // 定义协议
-protocol MHVisitorViewDelegate: NSObjectProtocol {
+@objc protocol MHVisitorViewDelegate: NSObjectProtocol {
+    optional
     func didRegister()
     func didLogin()
 }
@@ -108,7 +109,7 @@ class MHVisitorView: UIView {
     @objc private func registerButtonClick(){
         // 调用
 //        registerClosure?()
-        delegate?.didRegister()
+        delegate?.didRegister?()
     
     }
     

@@ -10,7 +10,7 @@ import UIKit
 
 class MHBaseTableViewController: UITableViewController ,MHVisitorViewDelegate {
     
-    var isLogin: Bool = false
+    var isLogin: Bool = MHOauthViewModel.sharedInstance.isLogin
     
 
     var visitorView: MHVisitorView?
@@ -41,6 +41,7 @@ extension MHBaseTableViewController {
     
     func didRegister() {
         
+        navigationController?.presentViewController(UINavigationController(rootViewController: MHOAuthViewController()), animated: true, completion: nil)
     }
     
     func didLogin() {
