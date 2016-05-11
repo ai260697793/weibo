@@ -18,18 +18,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.makeKeyAndVisible()
-        
-        window?.rootViewController = MHTabBarViewController()
+
+        if MHOauthViewModel.sharedInstance.isLogin {
+            window?.rootViewController = MHWelcomeViewController()
+        }else {
+            window?.rootViewController = MHTabBarViewController()
+        }
         
         setAppearance()
-        
+
+        // 监听通知
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AppDelegate.changeViewController(_:)), name: kNotificationChangeViewController, object: nil)
+
         return true
+    }
+
+    @objc private func changeViewController(notification: NSNotification){
+        if notification.object is MHOAuthViewController {
+            window?.rootViewController = MHWelcomeViewController()
+        }else if notification.object is MHWelcomeViewController {
+            window?.rootViewController = MHTabBarViewController()
+        }
     }
     
     ///  程序一启动时,设置所有bar的颜色
     private func setAppearance(){
         UITabBar.appearance().tintColor = UIColor.orangeColor()
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
+    }
+
+    deinit{
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: kNotificationChangeViewController, object: nil)
     }
 
     func applicationWillResignActive(application: UIApplication) {

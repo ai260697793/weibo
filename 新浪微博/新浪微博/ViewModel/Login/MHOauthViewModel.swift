@@ -38,11 +38,10 @@ class MHOauthViewModel: NSObject {
         let parameters = ["client_id":AppKey, "client_secret":AppSecret, "grant_type":"authorization_code", "code":code, "redirect_uri":AppRedictUrl]
         
         MHHTTPClient.sharedInstance.request(MHHTTPClientType.POST, URLString: urlString, parameters: parameters, success: { (_, JSON) in
-//                print(JSON)
+
             if let json = JSON as? [String:AnyObject] {
                 let model = MHUserAccount(dic: json)
                 
-//                print(model.uid)
                 // 获取token后进行数据请求来获取用户信息
                 self.loadInfo(model, success: success, failed: failed)
             }

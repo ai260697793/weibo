@@ -91,9 +91,12 @@ extension MHOAuthViewController {
                     // 调用afn请求,用code来换取token
                     // 调用成功,切换视图控制器,失败,显示失败信息
                     MHOauthViewModel.sharedInstance.loadToken(code, success: {
-                        self.dismiss()
-                        SVProgressHUD.dismiss()
-                        }, failed: { 
+//                        self.dismiss()
+                        // 发送通知
+                        NSNotificationCenter.defaultCenter().postNotificationName(kNotificationChangeViewController, object: self)
+
+//                        SVProgressHUD.dismiss()
+                        }, failed: {
                             //处理失败信息
                     })
                 }

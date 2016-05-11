@@ -13,7 +13,15 @@
 		40034BC21CDB2672002661F1 /* MHMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40034BC11CDB2672002661F1 /* MHMessageViewController.swift */; };
 		40034BC41CDB267B002661F1 /* MHSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40034BC31CDB267B002661F1 /* MHSettingViewController.swift */; };
 		40034BC61CDB26A6002661F1 /* MHVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40034BC51CDB26A6002661F1 /* MHVisitorView.swift */; };
+		40587E081CE0AA1C00480629 /* MHWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40587E071CE0AA1C00480629 /* MHWelcomeViewController.swift */; };
+		407BA0851CE22E4400904560 /* MHOriginalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407BA0841CE22E4400904560 /* MHOriginalView.swift */; };
+		407BA0871CE2305F00904560 /* UILable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407BA0861CE2305F00904560 /* UILable+Extension.swift */; };
 		40822B421CDB84940032270F /* MHHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40822B411CDB84940032270F /* MHHTTPClient.swift */; };
+		40A601B71CE1FCD300E0B747 /* MHStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A601B61CE1FCD300E0B747 /* MHStatusListViewModel.swift */; };
+		40A601B91CE2039C00E0B747 /* MHStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A601B81CE2039C00E0B747 /* MHStatus.swift */; };
+		40A601BB1CE2067000E0B747 /* MHStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A601BA1CE2067000E0B747 /* MHStatusViewModel.swift */; };
+		40A601BD1CE20C1C00E0B747 /* MHStatusUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A601BC1CE20C1C00E0B747 /* MHStatusUser.swift */; };
+		40A601C01CE2170F00E0B747 /* MHHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A601BF1CE2170F00E0B747 /* MHHomeTableViewCell.swift */; };
 		40CBBF971CDC25B100D35A40 /* MHOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CBBF961CDC25B100D35A40 /* MHOAuthViewController.swift */; };
 		40CBBF991CDCBCB000D35A40 /* MHConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CBBF981CDCBCB000D35A40 /* MHConstant.swift */; };
 		40CBBF9B1CDCBF3A00D35A40 /* MHOauthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CBBF9A1CDCBF3A00D35A40 /* MHOauthViewModel.swift */; };
@@ -33,7 +41,15 @@
 		40034BC11CDB2672002661F1 /* MHMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHMessageViewController.swift; sourceTree = "<group>"; };
 		40034BC31CDB267B002661F1 /* MHSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHSettingViewController.swift; sourceTree = "<group>"; };
 		40034BC51CDB26A6002661F1 /* MHVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHVisitorView.swift; sourceTree = "<group>"; };
+		40587E071CE0AA1C00480629 /* MHWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHWelcomeViewController.swift; sourceTree = "<group>"; };
+		407BA0841CE22E4400904560 /* MHOriginalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHOriginalView.swift; sourceTree = "<group>"; };
+		407BA0861CE2305F00904560 /* UILable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Extension.swift"; sourceTree = "<group>"; };
 		40822B411CDB84940032270F /* MHHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHHTTPClient.swift; sourceTree = "<group>"; };
+		40A601B61CE1FCD300E0B747 /* MHStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHStatusListViewModel.swift; sourceTree = "<group>"; };
+		40A601B81CE2039C00E0B747 /* MHStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHStatus.swift; sourceTree = "<group>"; };
+		40A601BA1CE2067000E0B747 /* MHStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHStatusViewModel.swift; sourceTree = "<group>"; };
+		40A601BC1CE20C1C00E0B747 /* MHStatusUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHStatusUser.swift; sourceTree = "<group>"; };
+		40A601BF1CE2170F00E0B747 /* MHHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHHomeTableViewCell.swift; sourceTree = "<group>"; };
 		40CBBF961CDC25B100D35A40 /* MHOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHOAuthViewController.swift; sourceTree = "<group>"; };
 		40CBBF981CDCBCB000D35A40 /* MHConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHConstant.swift; sourceTree = "<group>"; };
 		40CBBF9A1CDCBF3A00D35A40 /* MHOauthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHOauthViewModel.swift; sourceTree = "<group>"; };
@@ -60,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40A601BE1CE216EB00E0B747 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				40A601BF1CE2170F00E0B747 /* MHHomeTableViewCell.swift */,
+				407BA0841CE22E4400904560 /* MHOriginalView.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		40FA06A91CDA08E00036DAC0 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +126,7 @@
 				40034BBB1CDAE1FC002661F1 /* MHTabBar.swift */,
 				40822B411CDB84940032270F /* MHHTTPClient.swift */,
 				40CBBF981CDCBCB000D35A40 /* MHConstant.swift */,
+				407BA0861CE2305F00904560 /* UILable+Extension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -127,6 +153,8 @@
 		40FA06CF1CDA2F1E0036DAC0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				40A601B81CE2039C00E0B747 /* MHStatus.swift */,
+				40A601BC1CE20C1C00E0B747 /* MHStatusUser.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -183,6 +211,7 @@
 		40FA06DB1CDA2F1E0036DAC0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				40A601BE1CE216EB00E0B747 /* cell */,
 				40034BBD1CDB2659002661F1 /* MHHomeViewController.swift */,
 			);
 			path = Home;
@@ -193,6 +222,7 @@
 			children = (
 				40034BC51CDB26A6002661F1 /* MHVisitorView.swift */,
 				40CBBF961CDC25B100D35A40 /* MHOAuthViewController.swift */,
+				40587E071CE0AA1C00480629 /* MHWelcomeViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -235,6 +265,8 @@
 		40FA06E11CDA2F1E0036DAC0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				40A601B61CE1FCD300E0B747 /* MHStatusListViewModel.swift */,
+				40A601BA1CE2067000E0B747 /* MHStatusViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -404,13 +436,21 @@
 				40034BC41CDB267B002661F1 /* MHSettingViewController.swift in Sources */,
 				40FA06B61CDA08E00036DAC0 /* AppDelegate.swift in Sources */,
 				40034BBC1CDAE1FC002661F1 /* MHTabBar.swift in Sources */,
+				40A601BD1CE20C1C00E0B747 /* MHStatusUser.swift in Sources */,
+				407BA0851CE22E4400904560 /* MHOriginalView.swift in Sources */,
 				40034BC61CDB26A6002661F1 /* MHVisitorView.swift in Sources */,
 				40034BC01CDB2662002661F1 /* MHFindViewController.swift in Sources */,
+				40A601B71CE1FCD300E0B747 /* MHStatusListViewModel.swift in Sources */,
 				40CBBF9B1CDCBF3A00D35A40 /* MHOauthViewModel.swift in Sources */,
 				40822B421CDB84940032270F /* MHHTTPClient.swift in Sources */,
+				40587E081CE0AA1C00480629 /* MHWelcomeViewController.swift in Sources */,
+				40A601B91CE2039C00E0B747 /* MHStatus.swift in Sources */,
+				40A601C01CE2170F00E0B747 /* MHHomeTableViewCell.swift in Sources */,
 				40FA06E61CDA307E0036DAC0 /* MHBaseTableViewController.swift in Sources */,
 				40034BC21CDB2672002661F1 /* MHMessageViewController.swift in Sources */,
 				40CBBF991CDCBCB000D35A40 /* MHConstant.swift in Sources */,
+				407BA0871CE2305F00904560 /* UILable+Extension.swift in Sources */,
+				40A601BB1CE2067000E0B747 /* MHStatusViewModel.swift in Sources */,
 				40CBBF971CDC25B100D35A40 /* MHOAuthViewController.swift in Sources */,
 				40CBBF9D1CDCC4A000D35A40 /* MHUserAccount.swift in Sources */,
 			);

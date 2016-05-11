@@ -28,4 +28,6 @@ let AppKey = "2990485310"
 let AppSecret = "c0e78554e15a9f441a9f59dac7d6a772"
 let AppRedictUrl = "http://www.baidu.com"
 
+// MARK: - 通知名称
+let kNotificationChangeViewController = "kNotificationChangeViewController"
 
